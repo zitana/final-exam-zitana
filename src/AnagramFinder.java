@@ -5,12 +5,12 @@ public class AnagramFinder {
   public AnagramFinder() {
   }
 
-  public boolean isAnagram(String one, String two) {
-    one = one.replaceAll("\\s+","");
-    two = two.replaceAll("\\s+","");
+  public boolean isAnagram(String string1, String string2) {
+    string1 = string1.replaceAll("\\s+","");
+    string2 = string2.replaceAll("\\s+","");
 
-    char[] s1Array = one.toLowerCase().toCharArray();
-    char[] s2Array = two.toLowerCase().toCharArray();
+    char[] s1Array = string1.toLowerCase().toCharArray();
+    char[] s2Array = string2.toLowerCase().toCharArray();
 
     Arrays.sort(s1Array);
     Arrays.sort(s2Array);
