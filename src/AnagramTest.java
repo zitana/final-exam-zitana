@@ -2,7 +2,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class ExerciseElevenTest {
+public class AnagramTest {
 
   @Test
   public void isAnagramTrue() throws Exception {
