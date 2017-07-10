@@ -1,14 +1,11 @@
 import java.util.Arrays;
 
-public class ExerciseEleven {
+public class AnagramFinder {
 
-  public static void main(String[] args) {
-    System.out.println(isAnagram("I am a weakish speller", "William Shakespeare"));
-    System.out.println(isAnagram("Gyomorrontás", "toronymorgás"));
-
+  public AnagramFinder() {
   }
 
-  public static boolean isAnagram(String one, String two) {
+  public boolean isAnagram(String one, String two) {
     one = one.replaceAll("\\s+","");
     two = two.replaceAll("\\s+","");
 
@@ -21,6 +18,4 @@ public class ExerciseEleven {
     return Arrays.equals(s1Array , s2Array);
   }
 
-  public ExerciseEleven() {
-  }
 }
